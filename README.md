@@ -2,11 +2,9 @@
 
 Terminal shell error alerts inspired by [Faah](https://github.com/kiron0/faah)
 
-
+Plays the Faah sound on command failure, with cooldown and quiet hours features to avoid alert fatigue.
 
 https://github.com/user-attachments/assets/4a917b3e-aab5-40ef-961e-a0ef75433622
-
-
 
 ![FAAH](https://i.kym-cdn.com/entries/icons/original/000/055/255/fahcover.jpg)
 
@@ -36,17 +34,17 @@ Then restart your shell.
 ## Usage
 
 ```bash
-faah status
+faah status # show current config and state
 faah on
 faah off
 faah toggle
-faah test
-faah cooldown 10
-faah quiet 23:00-07:00
+faah test # play sound without checking command status
+faah cooldown 10 # set cooldown duration in minutes
+faah quiet 23:00-07:00 # set quiet hours window
 faah quiet off
-faah snooze 30
-faah clear-snooze
-faah sound /path/to/sound.wav
+faah snooze 30 # snooze for 30 minutes
+faah clear-snooze # clear snooze state
+faah sound /path/to/sound.wav # set custom sound file
 ```
 
 ## Behavior
