@@ -2,7 +2,11 @@
 
 Terminal shell error alerts inspired by [Faah](https://github.com/kiron0/faah)
 
-[faah-sh](./res/example.mp4)
+
+
+https://github.com/user-attachments/assets/4a917b3e-aab5-40ef-961e-a0ef75433622
+
+
 
 ![FAAH](https://i.kym-cdn.com/entries/icons/original/000/055/255/fahcover.jpg)
 
