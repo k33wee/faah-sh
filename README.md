@@ -1,6 +1,7 @@
 # faah-sh
 
 Terminal shell error alerts inspired by [Faah](https://github.com/kiron0/faah)
+![FAAH](https://i.kym-cdn.com/entries/icons/original/000/055/255/fahcover.jpg)
 
 ## Language choice
 
@@ -9,20 +10,13 @@ This MVP is implemented in **Bash** so it works by sourcing one file, with no ru
 ## Install
 
 ```bash
+git clone https://github.com/k33wee/faah-sh.git
+cd faah-sh
 chmod +x install.sh
 ./install.sh
 ```
 
 Then restart your shell.
-
-## Project structure
-
-- `faah.sh`: loader/entrypoint
-- `lib/faah/core.sh`: config/state/sound logic
-- `lib/faah/hooks.sh`: Bash/Zsh hook wiring
-- `lib/faah/cli.sh`: `faah` command handlers
-- `install.sh`: installer entrypoint
-- `lib/install/rc_lines.sh`: rc-file add/remove helpers
 
 ## Uninstall
 
@@ -56,3 +50,12 @@ faah sound /path/to/sound.wav
 - Quiet hours window (`HH:MM-HH:MM`)
 - Defaults to `res/media_faah.wav` when present
 - Plays configured audio file when possible, otherwise terminal bell
+
+## Project structure
+
+- `faah.sh`: loader/entrypoint
+- `lib/faah/core.sh`: config/state/sound logic
+- `lib/faah/hooks.sh`: Bash/Zsh hook wiring
+- `lib/faah/cli.sh`: `faah` command handlers
+- `install.sh`: installer entrypoint
+- `lib/install/rc_lines.sh`: rc-file add/remove helpers
