@@ -56,6 +56,11 @@ faah sound /path/to/sound.wav # set custom sound file
 - Defaults to `res/media_faah.wav` when present
 - Plays configured audio file when possible, otherwise terminal bell
 
+## Supported shells
+
+- Bash
+- Zsh
+
 ## Project structure
 
 - `faah.sh`: loader/entrypoint
