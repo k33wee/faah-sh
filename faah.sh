@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ -n "${ZSH_VERSION:-}" ]; then
-  __faah_script_file="$(builtin eval 'printf "%s" "${(%):-%N}"')"
+  __faah_script_file="${(%):-%N}"
 else
   __faah_script_file="${BASH_SOURCE[0]:-$0}"
 fi
